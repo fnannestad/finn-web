@@ -63,7 +63,7 @@
 		"@typescript-eslint/no-empty-function": "off",
 		"@typescript-eslint/explicit-module-boundary-types": "off",
 		"@typescript-eslint/no-extra-semi": "off",
-        "semi": ["error", "never"],
+		"semi": ["error", "never"],
 		"quotes": "off",
 		"@typescript-eslint/quotes": ["error", "double", { "avoidEscape": true, "allowTemplateLiterals": false }],
 		"@typescript-eslint/no-explicit-any": "error",
