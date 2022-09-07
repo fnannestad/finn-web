@@ -1,0 +1,124 @@
+{
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"warnOnUnsupportedTypeScriptVersion": true,
+		"ecmaVersion": 2018,
+		"sourceType": "module"
+	},
+	"env": {
+		"browser": false,
+		"node": true,
+		"es6": true
+	},
+	"extends": [
+		"plugin:@typescript-eslint/recommended",
+		"plugin:react-hooks/recommended",
+		"plugin:react/recommended",
+		"plugin:security/recommended",
+		"plugin:security-node/recommended",
+		"plugin:no-unsanitized/DOM"
+	],
+	"plugins": [
+		"@typescript-eslint",
+		"import",
+		"security",
+		"security-node",
+		"no-smart-quotes",
+		"react-prefer-function-component"
+	],
+	"settings": {
+		"react": {
+			"version": "detect"
+		},
+		"import/resolver": {
+			"node": {
+				"extensions": [".ts", ".tsx", ".js", ".jsx"]
+			}
+		}
+	},
+	"rules": {
+		"@typescript-eslint/adjacent-overload-signatures": "error",
+		"@typescript-eslint/array-type": "error",
+		"camelcase": "off",
+		"@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+		"@typescript-eslint/no-inferrable-types": "off",
+		"@typescript-eslint/typedef": [
+			"error",
+			{
+				"arrayDestructuring": false,
+				"arrowParameter": false,
+				"memberVariableDeclaration": false,
+				"parameter": true,
+				"objectDestructuring": false,
+				"propertyDeclaration": true,
+				"variableDeclaration": false
+			}
+		],
+		"@typescript-eslint/no-misused-new": "error",
+		"@typescript-eslint/no-this-alias": "error",
+		"@typescript-eslint/prefer-function-type": "error",
+		"@typescript-eslint/prefer-namespace-keyword": "error",
+		"@typescript-eslint/no-use-before-define": "off",
+		"@typescript-eslint/no-var-requires": "off",
+		"@typescript-eslint/no-empty-function": "off",
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"@typescript-eslint/no-extra-semi": "off",
+        "semi": ["error", "never"],
+		"quotes": "off",
+		"@typescript-eslint/quotes": ["error", "double", { "avoidEscape": true, "allowTemplateLiterals": false }],
+		"@typescript-eslint/no-explicit-any": "error",
+		"@typescript-eslint/triple-slash-reference": "error",
+		"@typescript-eslint/type-annotation-spacing": "error",
+		"@typescript-eslint/unified-signatures": "error",
+		"@typescript-eslint/member-delimiter-style": "off",
+		"@typescript-eslint/explicit-function-return-type": "error",
+		"@typescript-eslint/no-empty-interface": "off",
+		"@typescript-eslint/no-unused-vars": ["error", { "vars": "all", "args": "none", "varsIgnorePattern": "$" }],
+		"react/prop-types": "off",
+		"react/jsx-no-target-blank": "off",
+		"react/jsx-curly-brace-presence": ["error", { "props": "never", "children": "never" }],
+		"react/jsx-boolean-value": ["error", "always"],
+		"react/jsx-fragments": ["error", "syntax"],
+		"react/jsx-newline": ["error", { "prevent": true }],
+		"react/self-closing-comp": "error",
+		"constructor-super": "error",
+		"curly": "error",
+		"dot-notation": "error",
+		"eqeqeq": "error",
+		"new-parens": "error",
+		"no-caller": "error",
+		"no-duplicate-case": "error",
+		"no-duplicate-imports": ["error"],
+		"no-empty": "error",
+		"no-eval": "error",
+		"no-extra-bind": "error",
+		"no-fallthrough": "error",
+		"no-new-func": "error",
+		"no-new-wrappers": "error",
+		"no-return-await": "error",
+		"no-sparse-arrays": "error",
+		"no-template-curly-in-string": "error",
+		"no-trailing-spaces": "error",
+		"no-undef-init": "error",
+		"no-unsafe-finally": "error",
+		"one-var-declaration-per-line": "error",
+		"no-unused-labels": "error",
+		"import/no-unused-modules": "error",
+		"no-var": "error",
+		"object-shorthand": "error",
+		"no-useless-rename": "error",
+		"prefer-const": "error",
+		"prefer-rest-params": "error",
+		"prefer-object-spread": "error",
+		"quote-props": ["error", "consistent-as-needed"],
+		"space-in-parens": "error",
+		"unicode-bom": ["error", "never"],
+		"use-isnan": "error",
+		"prefer-template": "error",
+		"no-unreachable": "error",
+		"no-unneeded-ternary": "error",
+		"spaced-comment": "error",
+		"react-prefer-function-component/react-prefer-function-component": "error",
+		"no-smart-quotes/no-smart-quotes": "error"
+	}
+}

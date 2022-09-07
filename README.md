@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Finn Web
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A sandbox for some mucking around with React.
 
 ## Available Scripts
 
